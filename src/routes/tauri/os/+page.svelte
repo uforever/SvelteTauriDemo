@@ -18,7 +18,7 @@
 </script>
 
 <main
-  class="flex flex-col justify-center items-center pt-[10vh] bg-gray-50 dark:bg-gray-900"
+  class="flex flex-col justify-center items-center pt-[10vh]"
 >
   <h2 class="text-center text-xl font-semibold text-gray-900 dark:text-white">
     操作系统信息
