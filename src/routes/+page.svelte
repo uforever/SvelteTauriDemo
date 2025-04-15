@@ -23,5 +23,5 @@
     </a>
   </div>
 
-  <p>点击logo查看更多</p>
+  <p class="text-sm font-semibold text-gray-500">点击logo查看更多</p>
 </main>
