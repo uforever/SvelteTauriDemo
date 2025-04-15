@@ -16,7 +16,7 @@
 {:else} -->
 <div class="h-screen flex flex-col">
   <Navbar>
-    <NavBrand href="/">
+    <NavBrand href="/svelte">
       <img src="/svelte.svg" class="me-3 h-6 sm:h-9" alt="Svelte Logo" />
       <span
         class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
