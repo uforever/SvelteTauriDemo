@@ -1,1 +1,1 @@
-<h2>Dialog</h2>
+<h2>Store</h2>
