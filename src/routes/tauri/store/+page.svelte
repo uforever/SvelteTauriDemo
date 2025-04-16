@@ -13,25 +13,19 @@
   } from "flowbite-svelte";
 
   const store = new LazyStore("demo.json");
-
-  async function getEntries() {
-    return await store.entries();
-  }
-
-  // let items = $state([]);
-  let promise = $state(getEntries());
+  let promise = $state(store.entries());
 
   let key = $state("");
   let value = $state("");
 
   async function handleInsert() {
     await store.set(key, value);
-    promise = getEntries();
+    promise = store.entries();
   }
 
   async function handleDelete(key) {
     await store.delete(key);
-    promise = getEntries();
+    promise = store.entries();
   }
 </script>
 
