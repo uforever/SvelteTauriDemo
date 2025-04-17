@@ -23,6 +23,7 @@
       ]
     },
     "store:default",
-    "dialog:default"
+    "dialog:default",
+    "sql:default"
   ]
 }
