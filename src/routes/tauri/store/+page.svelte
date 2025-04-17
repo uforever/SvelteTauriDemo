@@ -12,7 +12,9 @@
     FloatingLabelInput,
   } from "flowbite-svelte";
 
-  const store = new LazyStore("demo.json");
+  const store = new LazyStore("demo.json", {
+    autoSave: true,
+  });
   let promise = $state(store.entries());
 
   let key = $state("");
