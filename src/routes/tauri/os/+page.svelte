@@ -17,7 +17,7 @@
   }
 </script>
 
-<main
+<div
   class="flex flex-col justify-center items-center pt-[10vh]"
 >
   <h2 class="text-center text-xl font-semibold text-gray-900 dark:text-white">
@@ -32,4 +32,4 @@
       {item}
     </Listgroup>
   {/await}
-</main>
+</div>

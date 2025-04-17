@@ -11,7 +11,7 @@
   // }
 </script>
 
-<main class="flex flex-col justify-center items-center pt-[10vh]">
+<div class="flex flex-col justify-center items-center pt-[10vh]">
   <h1 class="text-center text-3xl font-semibold text-gray-900 dark:text-white">Tauri + Svelte</h1>
 
   <div class="flex justify-center space-x-6 mt-6">
@@ -24,4 +24,4 @@
   </div>
 
   <p class="text-sm font-semibold text-gray-500">点击logo查看更多</p>
-</main>
+</div>
