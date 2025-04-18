@@ -4,7 +4,7 @@ Tauri + SvelteKit 示例应用
 
 ## 测试平台
 
-x86_64 Windows
+x64 Windows
 
 aarch64 Android ([WebView](https://play.google.com/store/apps/details?id=com.google.android.webview)需要更新)
 
@@ -16,5 +16,3 @@ aarch64 Android ([WebView](https://play.google.com/store/apps/details?id=com.goo
 
 | ![Android 样式](screenshot/android.jpg) | ![Android 功能](screenshot/store.jpg) |
 | --- | ---|
-
-
