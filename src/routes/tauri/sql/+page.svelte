@@ -5,7 +5,6 @@
   import {
     Button,
     Card,
-    Hr,
     Table,
     TableBody,
     TableBodyCell,
@@ -28,10 +27,10 @@
 
   async function handleSubmit() {
     const db = await Database.load("sqlite:test.db");
-    await db.execute(
-      "INSERT INTO users (name, age) VALUES ($1, $2)",
-      [ name, age ]
-    );
+    await db.execute("INSERT INTO users (name, age) VALUES ($1, $2)", [
+      name,
+      age,
+    ]);
     name = "";
     age = "";
     promise = db.select("SELECT * FROM users");
