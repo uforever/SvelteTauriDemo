@@ -1,7 +1,7 @@
 <script>
   // https://github.com/tauri-apps/plugins-workspace/blob/v2/plugins/sql/guest-js/index.ts
 
-  import Database from '@tauri-apps/plugin-sql';
+  import Database from "@tauri-apps/plugin-sql";
   import {
     Button,
     Card,
@@ -24,12 +24,19 @@
 
   let name = $state("");
   let age = $state("");
+  let promise = $state(handleQuery());
 
   async function handleSubmit() {
-    alert(name + " " + age);
+    const db = await Database.load("sqlite:test.db");
+    await db.execute(
+      "INSERT INTO users (name, age) VALUES ($1, $2)",
+      [ name, age ]
+    );
+    name = "";
+    age = "";
+    promise = db.select("SELECT * FROM users");
+    await db.close();
   }
-
-  let promise = handleQuery();
 </script>
 
 <div class="flex flex-col justify-center items-center pt-[1vh]">
