@@ -23,6 +23,8 @@
   async function handleInsert() {
     await store.set(key, value);
     promise = store.entries();
+    key = "";
+    value = "";
   }
 
   async function handleDelete(key) {
